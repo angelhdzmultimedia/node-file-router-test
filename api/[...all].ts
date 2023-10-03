@@ -99,5 +99,6 @@ const pages: any = {
 
 export default (req: IncomingMessage, res: ServerResponse) => {
   const page: string = pages[req.url as any] ?? ''
+
   return res.end(page)
 }
